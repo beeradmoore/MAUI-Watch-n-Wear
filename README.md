@@ -18,7 +18,7 @@ Test the functionality of an iPhone with a paired Wear OS device. This appears t
 Create a MAUI application and add relevant tooling to bundle the Xamarin wearable app from step 1.
 
 ### Step 3
-Because Xamarin will reach end of life at some point ([2 years after final release](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin)) also test building of a native Obj-C/Swift watchOS app and a native Java/Kotlin Wear OS app bundlded within the MAUI project created in step 2.
+Because Xamarin will reach end of support at some point ([2 years after final release](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin)) also test building of a native Obj-C/Swift watchOS app and a native Java/Kotlin Wear OS app bundlded within the MAUI project created in step 2.
 
 
 
