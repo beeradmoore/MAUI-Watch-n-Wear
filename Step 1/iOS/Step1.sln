@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.810.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step1", "Step1.csproj", "{AC9C4907-9B55-4DE2-82AE-30C43A8B7B62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step1Watch.WatchOSApp", "Step1Watch\Step1Watch.WatchOSApp\Step1Watch.WatchOSApp.csproj", "{E41C713E-C773-41FC-90DE-50D02C01F8B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step1Watch.WatchOSExtension", "Step1Watch\Step1Watch.WatchOSExtension\Step1Watch.WatchOSExtension.csproj", "{722C2EF1-946A-4A9B-8384-4223475FF314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -21,6 +25,22 @@ Global
 		{AC9C4907-9B55-4DE2-82AE-30C43A8B7B62}.Debug|iPhone.Build.0 = Debug|iPhone
 		{AC9C4907-9B55-4DE2-82AE-30C43A8B7B62}.Release|iPhone.ActiveCfg = Release|iPhone
 		{AC9C4907-9B55-4DE2-82AE-30C43A8B7B62}.Release|iPhone.Build.0 = Release|iPhone
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Release|iPhone.Build.0 = Release|iPhone
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Debug|iPhone.Build.0 = Debug|iPhone
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Release|iPhone.ActiveCfg = Release|iPhone
+		{722C2EF1-946A-4A9B-8384-4223475FF314}.Release|iPhone.Build.0 = Release|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

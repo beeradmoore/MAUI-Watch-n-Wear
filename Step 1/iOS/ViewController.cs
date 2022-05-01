@@ -1,12 +1,13 @@
 ﻿using Foundation;
 using System;
 using UIKit;
+using WatchConnectivity;
 
 namespace Step1
 {
-    public partial class ViewController : UIViewController
+    public partial class ViewController : UIViewController, IWCSessionDelegate
     {
-        int _value = 0;
+        int count = 0;
 
         public ViewController(IntPtr handle) : base(handle)
         {
@@ -15,7 +16,13 @@ namespace Step1
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
+
+            if (WCSession.IsSupported)
+            {
+                var session = WCSession.DefaultSession;
+                session.Delegate = this;
+                session.ActivateSession();
+            }
         }
 
         public override void DidReceiveMemoryWarning()
@@ -26,19 +33,48 @@ namespace Step1
 
         partial void decClicked(NSObject sender)
         {
-            --_value;
+            --count;
             UpdateTextDisplay();
+            SyncCountToWatch();
         }
 
         partial void incClicked(NSObject sender)
         {
-            ++_value;
+            ++count;
             UpdateTextDisplay();
+            SyncCountToWatch();
         }
 
         void UpdateTextDisplay()
         {
-            displayLabel.Text = _value.ToString();
+            InvokeOnMainThread(() =>
+            {
+                displayLabel.Text = count.ToString();
+            });
         }
+
+        void SyncCountToWatch()
+        {
+            if (WCSession.DefaultSession.Reachable)
+            {
+                var data = new NSDictionary<NSString, NSObject>(new NSString("count"),  new NSNumber(count));
+                WCSession.DefaultSession.SendMessage(data, null, null);
+            }
+        }
+
+
+        #region IWCSessionDelegate
+        [Export("session:didReceiveMessage:")]
+        public void DidReceiveMessage(WCSession session, NSDictionary<NSString, NSObject> message)
+        {
+            var key = new NSString("count");
+            if (message.ContainsKey(key))
+            {
+                var countNumber = message[key] as NSNumber;
+                count = countNumber.Int32Value;
+                UpdateTextDisplay();
+            }
+        }
+        #endregion
     }
 }

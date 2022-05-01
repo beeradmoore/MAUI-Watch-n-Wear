@@ -3,3 +3,4 @@ bin/
 obj/
 .mfractor/
 .vs/
+mono_crash.*.json
