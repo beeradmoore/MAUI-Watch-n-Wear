@@ -7,48 +7,47 @@ using AndroidX.AppCompat.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
+using Android.Widget;
 
 namespace Step1
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        int _value = 0;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
-        }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
-            return true;
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
+            var decButton = FindViewById<Button>(Resource.Id.dec_button);
+            decButton.Click += (object sender, EventArgs e) =>
             {
-                return true;
-            }
+                --_value;
+                UpdateTextDisplay();
+            };
 
-            return base.OnOptionsItemSelected(item);
+            var incButton = FindViewById<Button>(Resource.Id.inc_button);
+            incButton.Click += (object sender, EventArgs e) =>
+            {
+                ++_value;
+                UpdateTextDisplay();
+            };
         }
 
-        private void FabOnClick(object sender, EventArgs eventArgs)
+
+        void UpdateTextDisplay()
         {
-            View view = (View)sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (View.IOnClickListener)null).Show();
+            var textViewDisplay = FindViewById<TextView>(Resource.Id.text_view_display);
+            textViewDisplay.Text = _value.ToString();
         }
+
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

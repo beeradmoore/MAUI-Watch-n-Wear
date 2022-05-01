@@ -6,6 +6,8 @@ namespace Step1
 {
     public partial class ViewController : UIViewController
     {
+        int _value = 0;
+
         public ViewController(IntPtr handle) : base(handle)
         {
         }
@@ -20,6 +22,23 @@ namespace Step1
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        partial void decClicked(NSObject sender)
+        {
+            --_value;
+            UpdateTextDisplay();
+        }
+
+        partial void incClicked(NSObject sender)
+        {
+            ++_value;
+            UpdateTextDisplay();
+        }
+
+        void UpdateTextDisplay()
+        {
+            displayLabel.Text = _value.ToString();
         }
     }
 }
