@@ -1,51 +1,41 @@
 ﻿using System;
-using Android.App;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using AndroidX.AppCompat.Widget;
-using AndroidX.AppCompat.App;
-using Google.Android.Material.FloatingActionButton;
-using Google.Android.Material.Snackbar;
-using Android.Widget;
 
-using Android.Gms.Common.Apis;
+using Android.App;
+using Android.Widget;
+using Android.OS;
+using Android.Support.Wearable.Activity;
 using Android.Gms.Wearable;
-using Android.Content;
-using AndroidX.LocalBroadcastManager.Content;
-using Android.Gms.Common.Api.Internal;
 using Android.Gms.Common;
+using Android.Gms.Common.Apis;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-namespace Step1
+namespace WearOSApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity,
+    [Activity(Label = "@string/app_name", MainLauncher = true)]
+    public class MainActivity : WearableActivity,
         MessageClient.IOnMessageReceivedListener,
         CapabilityClient.IOnCapabilityChangedListener
     {
         int count = 0;
-        TextView textViewDisplay;
+        TextView textView;
         ICollection<INode> nodes;
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            base.OnCreate(bundle);
             SetContentView(Resource.Layout.activity_main);
 
-            var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
+            textView = FindViewById<TextView>(Resource.Id.text_view_display);
+            SetAmbientEnabled();
 
-            textViewDisplay = FindViewById<TextView>(Resource.Id.text_view_display);
 
             var decButton = FindViewById<Button>(Resource.Id.dec_button);
             decButton.Click += (object sender, EventArgs e) =>
             {
                 --count;
                 UpdateTextDisplay();
-                SyncCountToWatch();
+                SyncCountToPhone();
             };
 
             var incButton = FindViewById<Button>(Resource.Id.inc_button);
@@ -53,7 +43,7 @@ namespace Step1
             {
                 ++count;
                 UpdateTextDisplay();
-                SyncCountToWatch();
+                SyncCountToPhone();
             };
 
             SetupCapability();
@@ -69,27 +59,27 @@ namespace Step1
             await WearableClass.GetCapabilityClient(this).AddListenerAsync(this, "step1_sync_count");
         }
 
-
         void UpdateTextDisplay()
         {
             RunOnUiThread(() =>
             {
-                textViewDisplay.Text = count.ToString();
+                textView.Text = count.ToString();
             });
         }
 
-        async Task SyncCountToWatch()
+        async Task SyncCountToPhone()
         {
             var data = BitConverter.GetBytes(count);
             //await UpdateConnectedNodes();
-            System.Diagnostics.Debug.WriteLine($"Phone: Attempting to send to {nodes.Count} nodes");
+            System.Diagnostics.Debug.WriteLine($"Watch: Attempting to send to {nodes.Count} nodes");
             foreach (var node in nodes)
             {
-                System.Diagnostics.Debug.WriteLine($"Phone: Attempting to send to {node.DisplayName}");
+                System.Diagnostics.Debug.WriteLine($"Watch: Attempting to send to {node.DisplayName}");
                 var result = await WearableClass.GetMessageClient(this).SendMessageAsync(node.Id, "/count", data);
                 System.Diagnostics.Debug.WriteLine(result);
             }
         }
+
 
         /*
         async Task<ICollection<INode>> UpdateConnectedNodes()
@@ -100,33 +90,27 @@ namespace Step1
             {
                 System.Diagnostics.Debug.WriteLine($"UpdateConnectedNodes: {node.DisplayName}");
             }
+
             nodes = await WearableClass.GetNodeClient(this).GetConnectedNodesAsync();
             return nodes;
         }
         */
 
 
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-
-
         #region CapabilityClient.IOnCapabilityChangedListener
         public void OnCapabilityChanged(ICapabilityInfo capabilityInfo)
         {
-            System.Diagnostics.Debug.WriteLine("Phone: OnCapabilityChanged");
+            System.Diagnostics.Debug.WriteLine("Watch: OnCapabilityChanged");
+
             nodes = capabilityInfo.Nodes;
         }
         #endregion
 
+
         #region MessageClient.IOnMessageReceivedListener
         public void OnMessageReceived(IMessageEvent messageEvent)
         {
-            System.Diagnostics.Debug.WriteLine("Phone: OnMessageReceived");
+            System.Diagnostics.Debug.WriteLine("Watch: OnMessageReceived");
             if (messageEvent.Path == "/count")
             {
                 var data = messageEvent.GetData();
@@ -135,8 +119,7 @@ namespace Step1
             }
         }
         #endregion
-
-
-
     }
 }
+
+
