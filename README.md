@@ -3,6 +3,15 @@ This repository dedicated to exploring adding watchOS and Wear OS applications i
 
 To accomplish this we will attempt various different steps to slowly add more and more functionality. A rough outline of how this will go is:
 
+### Status 
+| Step   | iOS Status | Android Status |
+|--------|------------|----------------|
+| Step 1 | ✅         | ✅              |
+| Step 2 | ✅         | ✅              |
+| Step 3 | Can't get MAUI to reference Step3.WatchOSApp | Currently working but not deploying in a single apk (may not be required) |
+| Step 4 | Untested         | Untested               |
+
+
 ### Basic app concept
 The app is intended to be simple and demonstrate basic functionality and communication between a phone app and a wearable app. In both cases the wearable app will be able to function in a standalone mode. It will display a number on the screen with -1/+1 buttons in order to increment the number. The wearable component will do the same, but both should be synced together. If you increase the number on the app it should increase it in the watch. If you increase the number on the watch it should increase it in the app.
 
