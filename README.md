@@ -15,10 +15,13 @@ Create a Xamarin.iOS and Xamarin.Android project with the accompanying wearable 
 Test the functionality of an iPhone with a paired Wear OS device. This appears to be possible, see the Android developer docs on independent vs standalone Wear OS app below.
 
 ### Step 2
-Create a MAUI application and add relevant tooling to bundle the Xamarin wearable app from step 1.
+Create a Xamarin.Forms application and which has included in the wearable projects from step 1.
 
 ### Step 3
-Because Xamarin will reach end of support at some point ([2 years after final release](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin)) also test building of a native Obj-C/Swift watchOS app and a native Java/Kotlin Wear OS app bundlded within the MAUI project created in step 2.
+Create a MAUI application and add relevant tooling to bundle the Xamarin wearable app from step 1.
+
+### Step 4
+Because Xamarin will reach end of support at some point ([2 years after final release](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin)) also test building of a native Obj-C/Swift watchOS app and a native Java/Kotlin Wear OS app bundlded within the MAUI project created in step 3.
 
 
 
