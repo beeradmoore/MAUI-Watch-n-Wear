@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Step2.MainPage">
+
+    <Grid>
+        <Button Grid.Column="0" Text="-" Clicked="Dec_Clicked" BackgroundColor="LightGray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="60" HeightRequest="60"  />
+        <Label Grid.Column="1" Text="{Binding Count}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" />
+        <Button Grid.Column="2" Text="+" Clicked="Inc_Clicked" BackgroundColor="LightGray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="60" HeightRequest="60"  />
+    </Grid>
+
+</ContentPage>
