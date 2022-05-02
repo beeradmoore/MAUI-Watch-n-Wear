@@ -50,8 +50,20 @@
 	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
 	  <PackageReference Include="Xamarin.GooglePlayServices.Wearable" Version="117.1.0.5" />
 	</ItemGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-ios'">
+		<ProjectReference Include="..\Step3.WatchOSApp\Step3.WatchOSApp.csproj">
+			<IsWatchApp>true</IsWatchApp>
+			<Project>{E41C713E-C773-41FC-90DE-50D02C01F8B3}</Project>
+			<Name>Step3.WatchOSApp</Name>
+		</ProjectReference>
+	</ItemGroup>
 	<ItemGroup>
-	  <None Remove="Step3.WearOSApp\**" />
-	  <Compile Remove="Step3.WearOSApp\**" />
+		<None Remove="Step3.WearOSApp\**" />
+		<Compile Remove="Step3.WearOSApp\**" />
+		<None Remove="Step3.WatchOSApp\**" />
+		<Compile Remove="Step3.WatchOSApp\**" />
+		<None Remove="Step3.WatchOSExtension\**" />
+		<Compile Remove="Step3.WatchOSExtension\**" />
 	</ItemGroup>
 </Project>
