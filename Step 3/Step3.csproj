@@ -14,7 +14,7 @@
 		<ApplicationTitle>Step3</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.step3</ApplicationId>
+		<ApplicationId>com.watchnwear.step3</ApplicationId>
 		<ApplicationIdGuid>07256e2b-0d80-4aa1-a8d2-2e2ee3294dc6</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -42,13 +42,16 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\" />
-	  <None Remove="Services\" />
+	  <None Remove="Resources\.DS_Store" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Images\" />
-	  <Folder Include="Services\" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
 	  <PackageReference Include="Xamarin.GooglePlayServices.Wearable" Version="117.1.0.5" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Step3.WearOSApp\**" />
+	  <Compile Remove="Step3.WearOSApp\**" />
 	</ItemGroup>
 </Project>

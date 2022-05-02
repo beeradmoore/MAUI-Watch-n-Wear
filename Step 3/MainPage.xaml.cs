@@ -1,5 +1,7 @@
 ﻿namespace Step3;
 
+using Services;
+
 public partial class MainPage : ContentPage
 {
     int count = 0;
@@ -16,13 +18,32 @@ public partial class MainPage : ContentPage
         }
     }
 
+    WatchService watch;
+
     public MainPage()
 	{
 		InitializeComponent();
 
 		BindingContext = this;
-	}
 
+        watch = new WatchService();
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        watch.Activate();
+        watch.ValueUpdated += Watch_ValueUpdated;
+    }
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+        watch.Deactivate();
+        watch.ValueUpdated -= Watch_ValueUpdated;
+    }
 
     void Dec_Clicked(Object sender, EventArgs e)
     {
@@ -36,9 +57,14 @@ public partial class MainPage : ContentPage
         SyncToWatch();
     }
 
+    void Watch_ValueUpdated(int value)
+    {
+        Count = value;
+    }
+
     void SyncToWatch()
     {
-        //watch.SendValue(count);
+        watch.SendValue(count);
     }
 }
 
