@@ -59,3 +59,4 @@ Implement both wearable apps with [Kotlin Multiplatform Mobile](https://kotlinla
 
 [Android developer docs on independent vs standalone Wear OS apps](https://developer.android.com/training/wearables/apps/standalone-apps)
 
+[WearOS app fails to compile when targeting net6.0-android](https://github.com/xamarin/xamarin-android/issues/7003)
