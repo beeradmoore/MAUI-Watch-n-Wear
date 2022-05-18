@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Step3", "Step3.csproj", "{B327F498-0E68-4324-9C1B-61AB244A0DA0}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Step3.WearOSApp", "Step3.WearOSApp\Step3.WearOSApp.csproj", "{58529811-30E1-4E13-BF4E-1C56FBC20A1C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step3.WatchOSApp", "Step3.WatchOSApp\Step3.WatchOSApp.csproj", "{E41C713E-C773-41FC-90DE-50D02C01F8B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step3.WatchOSExtension", "Step3.WatchOSExtension\Step3.WatchOSExtension.csproj", "{722C2EF1-946A-4A9B-8384-4223475FF314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step3.WearOSApp", "Step3.WearOSApp\Step3.WearOSApp.csproj", "{BE613F00-CF24-4890-A177-D6F6D504C0ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +35,6 @@ Global
 		{B327F498-0E68-4324-9C1B-61AB244A0DA0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{B327F498-0E68-4324-9C1B-61AB244A0DA0}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{B327F498-0E68-4324-9C1B-61AB244A0DA0}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{58529811-30E1-4E13-BF4E-1C56FBC20A1C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{E41C713E-C773-41FC-90DE-50D02C01F8B3}.Release|Any CPU.ActiveCfg = Release|iPhone
@@ -67,6 +59,18 @@ Global
 		{722C2EF1-946A-4A9B-8384-4223475FF314}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{722C2EF1-946A-4A9B-8384-4223475FF314}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{722C2EF1-946A-4A9B-8384-4223475FF314}.Debug|iPhone.Build.0 = Debug|iPhone
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Release|iPhone.Build.0 = Release|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{BE613F00-CF24-4890-A177-D6F6D504C0ED}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
