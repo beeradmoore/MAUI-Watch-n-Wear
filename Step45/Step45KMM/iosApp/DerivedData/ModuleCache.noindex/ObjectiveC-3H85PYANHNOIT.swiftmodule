@@ -1,0 +1,32 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/15.5/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule'
+dependencies:
+  - mtime:           1652812987000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/15.5/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule'
+    size:            35388
+  - mtime:           1650420442000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/arm64-apple-ios.swiftinterface'
+    size:            1900139
+    sdk_relative:    true
+  - mtime:           1650407341000000000
+    path:            'usr/include/Darwin.apinotes'
+    size:            1133
+    sdk_relative:    true
+  - mtime:           1644658931000000000
+    path:            'usr/include/objc/ObjectiveC.apinotes'
+    size:            11147
+    sdk_relative:    true
+  - mtime:           1650427892000000000
+    path:            'usr/lib/swift/Darwin.swiftmodule/arm64-apple-ios.swiftinterface'
+    size:            24535
+    sdk_relative:    true
+  - mtime:           1650420464000000000
+    path:            'usr/lib/swift/_Concurrency.swiftmodule/arm64-apple-ios.swiftinterface'
+    size:            97429
+    sdk_relative:    true
+  - mtime:           1650428121000000000
+    path:            'usr/lib/swift/ObjectiveC.swiftmodule/arm64-apple-ios.swiftinterface'
+    size:            3361
+    sdk_relative:    true
+version:         1
+...

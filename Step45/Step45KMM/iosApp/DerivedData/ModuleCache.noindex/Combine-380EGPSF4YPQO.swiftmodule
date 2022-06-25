@@ -1,0 +1,28 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/prebuilt-modules/8.5/Combine.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule'
+dependencies:
+  - mtime:           1652814693000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/prebuilt-modules/8.5/Combine.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule'
+    size:            427236
+  - mtime:           1645077487000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface'
+    size:            1950986
+    sdk_relative:    true
+  - mtime:           1644652527000000000
+    path:            'usr/include/Darwin.apinotes'
+    size:            1133
+    sdk_relative:    true
+  - mtime:           1645081652000000000
+    path:            'usr/lib/swift/Darwin.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface'
+    size:            30156
+    sdk_relative:    true
+  - mtime:           1645077489000000000
+    path:            'usr/lib/swift/_Concurrency.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface'
+    size:            97443
+    sdk_relative:    true
+  - mtime:           1645082176000000000
+    path:            'System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface'
+    size:            167969
+    sdk_relative:    true
+version:         1
+...
