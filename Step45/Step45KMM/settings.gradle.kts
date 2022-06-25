@@ -9,3 +9,4 @@ pluginManagement {
 rootProject.name = "Step45KMM"
 include(":androidApp")
 include(":shared")
+include(":wearapp")
