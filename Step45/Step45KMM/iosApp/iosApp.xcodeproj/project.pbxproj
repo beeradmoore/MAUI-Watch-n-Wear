@@ -210,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06937E222866F00500E9513B /* Build configuration list for PBXNativeTarget "watchApp WatchKit Extension" */;
 			buildPhases = (
+				06937E242866F16200E9513B /* ShellScript */,
 				06937E042866F00400E9513B /* Sources */,
 				06937E052866F00400E9513B /* Frameworks */,
 				06937E062866F00400E9513B /* Resources */,
@@ -315,6 +316,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		06937E242866F16200E9513B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+		};
 		7555FFB5242A651A00829871 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +452,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"watchApp WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = Q9T77K2G2C;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchApp WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "watchApp WatchKit Extension";
@@ -445,6 +464,11 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					watchshared,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -466,6 +490,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"watchApp WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = Q9T77K2G2C;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchApp WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "watchApp WatchKit Extension";
@@ -477,6 +502,11 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					watchshared,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
