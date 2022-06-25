@@ -15,7 +15,7 @@
 		<ApplicationTitle>Step45MAUI</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.step45maui</ApplicationId>
+		<ApplicationId>com.step45.iosApp</ApplicationId>
 		<ApplicationIdGuid>b89441d1-eae5-41b8-8ee3-520c683b2248</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -51,6 +51,12 @@
 		<CreateAppBundleDependsOn>$(CreateAppBundleDependsOn);_CopyWatchOS2AppsToBundle</CreateAppBundleDependsOn>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios' and '$(Configuration)' == 'Debug'">
+		<RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
+		<CodesignKey>Apple Development: Created via API (53784473JC)</CodesignKey>
+		<CodesignProvision>Step45 iOS Debug</CodesignProvision>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -60,9 +66,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
-
-		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
