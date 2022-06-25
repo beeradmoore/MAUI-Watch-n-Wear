@@ -5,6 +5,109 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>09AF6DDA-2DE8-4C08-B0F2-2114AE6B2942</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>09AF6DDA-2DE8-4C08-B0F2-2114AE6B2942.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iosApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>watchApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run watchApp</string>
+			<key>timeStartedRecording</key>
+			<real>677839302.39886796</real>
+			<key>timeStoppedRecording</key>
+			<real>677839745.80414295</real>
+			<key>title</key>
+			<string>Run watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>09AF6DDA-2DE8-4C08-B0F2-2114AE6B2942</string>
+		</dict>
+		<key>11B42F3B-9458-470D-BE1B-BACF154B66D5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>11B42F3B-9458-470D-BE1B-BACF154B66D5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iosApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>watchApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run watchApp</string>
+			<key>timeStartedRecording</key>
+			<real>677839755.13061297</real>
+			<key>timeStoppedRecording</key>
+			<real>677839766.63731098</real>
+			<key>title</key>
+			<string>Run watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>11B42F3B-9458-470D-BE1B-BACF154B66D5</string>
+		</dict>
+		<key>DE3AAAC2-8690-439C-B95F-A46CEC71D324</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DE3AAAC2-8690-439C-B95F-A46CEC71D324.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iosApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>watchApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run watchApp</string>
+			<key>timeStartedRecording</key>
+			<real>677839836.21046901</real>
+			<key>timeStoppedRecording</key>
+			<real>677839846.80290401</real>
+			<key>title</key>
+			<string>Run watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>DE3AAAC2-8690-439C-B95F-A46CEC71D324</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

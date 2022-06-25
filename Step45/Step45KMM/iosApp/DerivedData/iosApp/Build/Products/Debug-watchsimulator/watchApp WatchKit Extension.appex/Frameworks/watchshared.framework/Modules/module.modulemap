@@ -1,0 +1,6 @@
+framework module watchshared {
+    umbrella header "watchshared.h"
+
+    export *
+    module * { export * }
+}

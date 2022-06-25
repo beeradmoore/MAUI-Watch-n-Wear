@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "a926779ad6abd17152930fb2cc8404181767a62b101a3687512e0ab17c4b1691"
+build_start_time: [1656147023, 839582920]
+build_end_time: [1656147027, 992979049]
+inputs:
+  "/Users/csabahuszar/Projects/MAUI-Watch-n-Wear/Step45/Step45KMM/iosApp/watchApp WatchKit Extension/ComplicationController.swift": [1656141956, 714832305]
+  "/Users/csabahuszar/Projects/MAUI-Watch-n-Wear/Step45/Step45KMM/iosApp/watchApp WatchKit Extension/ContentView.swift": [1656146943, 904348373]
+  "/Users/csabahuszar/Projects/MAUI-Watch-n-Wear/Step45/Step45KMM/iosApp/watchApp WatchKit Extension/iosAppApp.swift": [1656141956, 712628841]

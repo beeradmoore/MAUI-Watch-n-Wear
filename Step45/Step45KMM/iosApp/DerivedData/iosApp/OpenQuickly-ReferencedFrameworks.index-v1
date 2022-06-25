@@ -3,7 +3,8 @@
 <plist version="1.0">
 <array>
 	<string>SwiftUI</string>
-	<string>shared</string>
+	<string>watchshared</string>
 	<string>ClockKit</string>
+	<string>shared</string>
 </array>
 </plist>

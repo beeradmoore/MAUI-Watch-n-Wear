@@ -5,7 +5,92 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>3286FEEC-1648-4AF4-838F-F289F7F4EB5D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>3286FEEC-1648-4AF4-838F-F289F7F4EB5D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>watchApp-hhkndfwoucwprtdfpemnhvrjyrja</string>
+			<key>timeStartedRecording</key>
+			<real>677839821.33100498</real>
+			<key>timeStoppedRecording</key>
+			<real>677839828.87317896</real>
+			<key>title</key>
+			<string>Build target watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>3286FEEC-1648-4AF4-838F-F289F7F4EB5D</string>
+		</dict>
+		<key>8E531D61-DD88-424C-A73B-4F4B7B56D85B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>8E531D61-DD88-424C-A73B-4F4B7B56D85B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>iosApp-hhkndfwoucwprtdfpemnhvrjyrja</string>
+			<key>timeStartedRecording</key>
+			<real>677839821.33080101</real>
+			<key>timeStoppedRecording</key>
+			<real>677839836.20330703</real>
+			<key>title</key>
+			<string>Build target iosApp</string>
+			<key>uniqueIdentifier</key>
+			<string>8E531D61-DD88-424C-A73B-4F4B7B56D85B</string>
+		</dict>
+		<key>A3A3A2B4-09CE-485C-AD8E-67A948DB2346</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>A3A3A2B4-09CE-485C-AD8E-67A948DB2346.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>watchApp_WatchKit_Extension-hhkndfwoucwprtdfpemnhvrjyrja</string>
+			<key>timeStartedRecording</key>
+			<real>677839821.33134604</real>
+			<key>timeStoppedRecording</key>
+			<real>677839828.26717603</real>
+			<key>title</key>
+			<string>Build target watchApp WatchKit Extension</string>
+			<key>uniqueIdentifier</key>
+			<string>A3A3A2B4-09CE-485C-AD8E-67A948DB2346</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>

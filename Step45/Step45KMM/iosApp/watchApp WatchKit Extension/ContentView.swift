@@ -7,11 +7,13 @@
 //
 
 import SwiftUI
+import watchshared
 
 struct ContentView: View {
+    let greet = Greeting().greeting()
+
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        Text(greet)
     }
 }
 
