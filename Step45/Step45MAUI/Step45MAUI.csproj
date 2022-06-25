@@ -30,6 +30,27 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<WatchAppBuildPath>/Users/csabahuszar/Projects/MAUI-Watch-n-Wear/Step45/Step45KMM/iosApp/DerivedData/iosApp/Build/Products</WatchAppBuildPath>
+		<WatchAppBundle>watchApp.app</WatchAppBundle>
+		<!--<WatchAppConfiguration Condition=" '$(Configuration)' == 'Debug'">watchos</WatchAppConfiguration>-->
+		<WatchAppConfiguration Condition=" '$(Configuration)' == 'Debug'">watchsimulator</WatchAppConfiguration>
+		<WatchAppBundleFullPath>$(WatchAppBuildPath)/$(Configuration)-$(WatchAppConfiguration)/$(WatchAppBundle)</WatchAppBundleFullPath>
+	</PropertyGroup>
+	<ItemGroup Condition="Exists('$(WatchAppBundleFullPath)') ">
+		<_ResolvedWatchAppReferences Include="$(WatchAppBundleFullPath)" />
+	</ItemGroup>
+	<PropertyGroup Condition=" '$(_ResolvedWatchAppReferences)' != '' ">
+		<CodesignExtraArgs>--deep</CodesignExtraArgs>
+	</PropertyGroup>
+	<Target Name="PrintWatchAppBundleStatus" BeforeTargets="Build">
+		<Message Text="WatchAppBundleFullPath: '$(WatchAppBundleFullPath)' '$(TargetFramework)' '$(RuntimeIdentifier)' '$(Platform)' exists. " Condition=" Exists('$(WatchAppBundleFullPath)') " />
+		<Message Text="WatchAppBundleFullPath: '$(WatchAppBundleFullPath)' '$(TargetFramework)' '$(RuntimeIdentifier)' '$(Platform)' does NOT exists. " Condition=" !Exists('$(WatchAppBundleFullPath)') " />
+	</Target>
+	<PropertyGroup>
+		<CreateAppBundleDependsOn>$(CreateAppBundleDependsOn);_CopyWatchOS2AppsToBundle</CreateAppBundleDependsOn>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
