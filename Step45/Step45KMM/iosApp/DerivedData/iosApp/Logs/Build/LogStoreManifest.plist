@@ -74,6 +74,74 @@
 			<key>uniqueIdentifier</key>
 			<string>19BEED53-34AB-4ABB-91B4-CA91376476C7</string>
 		</dict>
+		<key>53D2B9E5-2262-4808-B590-50CE413ADAFD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>53D2B9E5-2262-4808-B590-50CE413ADAFD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iosApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>watchApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build watchApp</string>
+			<key>timeStartedRecording</key>
+			<real>677870412.50956905</real>
+			<key>timeStoppedRecording</key>
+			<real>677870430.91121805</real>
+			<key>title</key>
+			<string>Build watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>53D2B9E5-2262-4808-B590-50CE413ADAFD</string>
+		</dict>
+		<key>6280D4CD-B482-4E7C-88C7-9176CC1F46A0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6280D4CD-B482-4E7C-88C7-9176CC1F46A0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iosApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>watchApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build watchApp</string>
+			<key>timeStartedRecording</key>
+			<real>677870476.78016102</real>
+			<key>timeStoppedRecording</key>
+			<real>677870482.16086197</real>
+			<key>title</key>
+			<string>Build watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>6280D4CD-B482-4E7C-88C7-9176CC1F46A0</string>
+		</dict>
 		<key>EEAB8FEA-5951-4380-877D-52607BD9FCC6</key>
 		<dict>
 			<key>className</key>

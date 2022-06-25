@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3286FEEC-1648-4AF4-838F-F289F7F4EB5D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
-			<key>fileName</key>
-			<string>3286FEEC-1648-4AF4-838F-F289F7F4EB5D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>watchApp-hhkndfwoucwprtdfpemnhvrjyrja</string>
-			<key>timeStartedRecording</key>
-			<real>677839821.33100498</real>
-			<key>timeStoppedRecording</key>
-			<real>677839828.87317896</real>
-			<key>title</key>
-			<string>Build target watchApp</string>
-			<key>uniqueIdentifier</key>
-			<string>3286FEEC-1648-4AF4-838F-F289F7F4EB5D</string>
-		</dict>
-		<key>8E531D61-DD88-424C-A73B-4F4B7B56D85B</key>
+		<key>2E391E06-8B99-4E26-A204-958B518A31DF</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>8E531D61-DD88-424C-A73B-4F4B7B56D85B.xcactivitylog</string>
+			<string>2E391E06-8B99-4E26-A204-958B518A31DF.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,15 +26,15 @@
 			<key>signature</key>
 			<string>iosApp-hhkndfwoucwprtdfpemnhvrjyrja</string>
 			<key>timeStartedRecording</key>
-			<real>677839821.33080101</real>
+			<real>677870480.07415497</real>
 			<key>timeStoppedRecording</key>
-			<real>677839836.20330703</real>
+			<real>677870482.158324</real>
 			<key>title</key>
 			<string>Build target iosApp</string>
 			<key>uniqueIdentifier</key>
-			<string>8E531D61-DD88-424C-A73B-4F4B7B56D85B</string>
+			<string>2E391E06-8B99-4E26-A204-958B518A31DF</string>
 		</dict>
-		<key>A3A3A2B4-09CE-485C-AD8E-67A948DB2346</key>
+		<key>987A49FB-C99A-45CF-A5F0-983572E031BC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,7 +43,35 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
 			<key>fileName</key>
-			<string>A3A3A2B4-09CE-485C-AD8E-67A948DB2346.xcactivitylog</string>
+			<string>987A49FB-C99A-45CF-A5F0-983572E031BC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>watchApp-hhkndfwoucwprtdfpemnhvrjyrja</string>
+			<key>timeStartedRecording</key>
+			<real>677870479.41754997</real>
+			<key>timeStoppedRecording</key>
+			<real>677870480.07360005</real>
+			<key>title</key>
+			<string>Build target watchApp</string>
+			<key>uniqueIdentifier</key>
+			<string>987A49FB-C99A-45CF-A5F0-983572E031BC</string>
+		</dict>
+		<key>CB8DAC82-DEE7-4027-AE74-E43BB3F58FDF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>CB8DAC82-DEE7-4027-AE74-E43BB3F58FDF.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>watchApp_WatchKit_Extension-hhkndfwoucwprtdfpemnhvrjyrja</string>
 			<key>timeStartedRecording</key>
-			<real>677839821.33134604</real>
+			<real>677870476.95667803</real>
 			<key>timeStoppedRecording</key>
-			<real>677839828.26717603</real>
+			<real>677870479.41631103</real>
 			<key>title</key>
 			<string>Build target watchApp WatchKit Extension</string>
 			<key>uniqueIdentifier</key>
-			<string>A3A3A2B4-09CE-485C-AD8E-67A948DB2346</string>
+			<string>CB8DAC82-DEE7-4027-AE74-E43BB3F58FDF</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
