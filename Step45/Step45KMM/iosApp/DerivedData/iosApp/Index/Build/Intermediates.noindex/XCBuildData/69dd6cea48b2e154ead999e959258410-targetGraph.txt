@@ -1,5 +1,0 @@
-Target dependency graph (4 targets)
-watchApp WatchKit Extension in iosApp, no dependencies
-watchApp WatchKit Extension in iosApp, no dependencies
-iosApp in iosApp, no dependencies
-iosApp in iosApp, no dependencies

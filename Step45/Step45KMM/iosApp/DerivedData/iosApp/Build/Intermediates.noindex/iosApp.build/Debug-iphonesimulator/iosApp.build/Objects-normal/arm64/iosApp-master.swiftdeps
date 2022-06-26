@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
-options: "029cda7cf562553728b031d305ccc1ecaeab90ae94d7ddc15723ba264e795a34"
-build_start_time: [1656147032, 160408020]
-build_end_time: [1656147035, 446007966]
-inputs:
-  "/Users/csabahuszar/Projects/MAUI-Watch-n-Wear/Step45/Step45KMM/iosApp/iosApp/ContentView.swift": [1656141239, 379114151]
-  "/Users/csabahuszar/Projects/MAUI-Watch-n-Wear/Step45/Step45KMM/iosApp/iosApp/iOSApp.swift": [1656141239, 380274772]
