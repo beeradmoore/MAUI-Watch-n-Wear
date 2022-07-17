@@ -4,3 +4,6 @@ obj/
 .mfractor/
 .vs/
 mono_crash.*.json
+Step45/Step45KMM/iosApp/DerivedData/*
+!Step45/Step45KMM/iosApp/DerivedData/iosApp/Build/Products
+
