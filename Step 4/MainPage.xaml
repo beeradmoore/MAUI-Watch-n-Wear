@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Step4.MainPage">
+
+       <Grid ColumnDefinitions="*,*,*">
+        <Button Grid.Column="0" Text="-" Clicked="Dec_Clicked" BackgroundColor="LightGray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="60" HeightRequest="60"  />
+        <Label Grid.Column="1" Text="{Binding Count}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" />
+        <Button Grid.Column="2" Text="+" Clicked="Inc_Clicked" BackgroundColor="LightGray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="60" HeightRequest="60"  />
+    </Grid>
+
+</ContentPage>
